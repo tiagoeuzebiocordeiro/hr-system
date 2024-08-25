@@ -1,4 +1,12 @@
 package com.tiagocordeiro.employee.services;
 
-public class EmployeeService {
+import com.tiagocordeiro.employee.domain.Employee;
+
+import java.util.List;
+
+public interface EmployeeService {
+
+    Employee findById(Long id);
+    List<Employee> findAll();
+
 }
